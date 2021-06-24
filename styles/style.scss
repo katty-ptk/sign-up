@@ -47,16 +47,86 @@ body {
         .actions {
             float: right;
             margin-right: 50px;
+            
             > * {
                 margin: 30px;
             }
 
+            .ad {
+                cursor: pointer;
+                background: $blueish;
+                text-align: center;
+                padding: 10px 0px;
+                border-radius: 10px;
+                box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.3);
+                width: 460px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
             form {
+                padding: 10px;
+                background: #fff;
+                width: 450px;
+                height: 400px;
+                margin-right: 70px;
+                border-radius: 15px;
+                color: #000;
+                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+                
                 > * {
                     margin: 15px;
                 }
+
                 input {
                     display: block;
+                    width: 87%;
+                    height: 20px;
+                    padding: 15px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    border: 2px solid #ccc;
+                    border-radius: 15px;
+                    transition: all 0.4s ease-in-out;
+
+                    &:focus {
+                        outline: none;
+                        border: 2.5px solid #000;
+                        border-radius: 15px;
+                    }
+                }
+
+                button {
+                    background: $green;
+                    border: none;
+                    width: 95%;
+                    height: 45px;
+                    border-radius: 15px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-align: center;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    font-family: 'Poppins', sans-serif;
+                    cursor: pointer;
+                }
+
+                p {
+                    &:last-child {
+                        font-size: 10px;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: bold;
+                        text-align: center;
+                        color: rgb(155, 154, 154);
+                        margin-top: 5px;
+
+                        span {
+                            color: $red;
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }
