@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background: #ff7a7a;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+body .bgimage, body .app {
+  position: absolute;
+}
+body .app {
+  width: 100%;
+  z-index: 1;
+}
+body .app .infos, body .app .actions {
+  color: #fff;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+body .app .infos {
+  float: left;
+  width: 40%;
+  margin-left: 170px;
+}
+body .app .infos h2 {
+  font-size: 3em;
+}
+body .app .actions {
+  float: right;
+  margin-right: 50px;
+}
+body .app .actions > * {
+  margin: 30px;
+}
+body .app .actions form > * {
+  margin: 15px;
+}
+body .app .actions form input {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

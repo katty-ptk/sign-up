@@ -1,0 +1,64 @@
+// variables ( colors )
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blueish: hsl(248, 32%, 49%);
+$dkBlue: hsl(249, 10%, 26%);
+$grayBlue: hsl(246, 25%, 77%);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background: $red;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    .bgimage, .app {
+        position: absolute;
+    }
+
+    // main div
+    .app {
+        width: 100%;
+        z-index: 1;
+
+        .infos, .actions {
+            // width: 50%;
+            color: #fff;
+            position: relative;
+            top: 50vh;
+            transform: translateY(-50%);
+        }
+
+        .infos {
+            float: left;
+            width: 40%;
+            margin-left: 170px;
+            // border: 2px solid black;
+            h2 {
+                font-size: 3em;
+            }
+        }
+
+        .actions {
+            float: right;
+            margin-right: 50px;
+            > * {
+                margin: 30px;
+            }
+
+            form {
+                > * {
+                    margin: 15px;
+                }
+                input {
+                    display: block;
+                }
+            }
+        }
+    }
+}
